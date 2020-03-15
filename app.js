@@ -16,6 +16,7 @@ function populate() {
         }
 
         showProgress();
+        TIMER = setInterval(renderCounter,1000);
     }
 };
 
@@ -39,6 +40,7 @@ function showScores() {
     gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
+    clearInterval(TIMER);
 };
 
 // create questions
