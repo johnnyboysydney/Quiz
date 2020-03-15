@@ -1,3 +1,5 @@
+
+// start the quiz
 function populate() {
     if(quiz.isEnded()) {
         showScores();
